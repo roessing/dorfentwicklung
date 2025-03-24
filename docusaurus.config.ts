@@ -35,7 +35,10 @@ const config: Config = {
     [
       'classic',
       {
-        docs: false,
+        docs: {
+          sidebarPath: './sidebars.ts',
+          editUrl: 'https://github.com/roessing/dorfentwicklung/tree/main/',
+        },
         blog: {
           showReadingTime: true,
           feedOptions: {
@@ -71,14 +74,15 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
-        /*{
+        {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
-        },*/
+          label: 'Unterlagen',
+        },
         { to: '/faq', label: 'Häufige Fragen', position: 'left' },
         { to: '/blog', label: 'Neuigkeiten', position: 'left' },
+        { to: '/changelog', label: 'Verlauf', position: 'left' },
         {
           href: 'https://github.com/roessing/dorfentwicklung',
           label: 'GitHub',
